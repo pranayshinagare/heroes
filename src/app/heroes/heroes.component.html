@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row m-b-20">
+      <div class="col-md-8">
+        <h4>List of Movies</h4>
+      </div>
+      <div class="col-md-4">
+        <button mat-raised-button color="primary" [routerLink]="['/details']" (click)="navigateToCreate();" class="m-l-10 pull-right">Create</button>
+      </div>
+    </div>
+  </div>
+  <div class="table-container m-b-40">
+    <table class="table table-hover">
+      <thead>
+        <th>id</th>
+        <th>Movie Name</th>
+        <th>Stars</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hero of heroes; let i = index" [class.selected]="hero === selectedHero">
+          <td>{{hero.id}}</td>
+          <td>{{hero.name}}</td>
+          <td>{{hero.qualities}}</td>
+          <td>
+            <i class="material-icons p-l-5 cur-pointer" [routerLink]="['/details']" (click)="onSelect(hero);" title="Edit">edit</i>
+            <i class="material-icons p-l-5 cur-pointer" (click)="deleteHero(hero);" title="Delete">delete</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "villans": [
+    {
+      "id": 1,
+      "name": "shyam"
+    }
+  ],
+  "heros": [
+    {
+      "name": "Dhumdhadaka",
+      "url": "http://image.ourclipart.com/2093/20930107/dhoom-dhadaka-marathi-movie.jpg",
+      "qualities": "Ashok saraf, Mahesh kothare, Laxmikant ",
+      "id": 56
+    },
+    {
+      "name": "Avengers-Infinity War",
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg",
+      "qualities": "Robert John Downey Jr, Chris Hemsworth, Scarlett Johansson",
+      "id": 70
+    },
+    {
+      "name": "Jurasic park",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2JMTOrl4JDWjl7s3-_ym8i5vhul7k-8E1e1tXA8mfU3aACl6",
+      "qualities": "Irfan khan, sai tamankar",
+      "id": 48
+    },
+    {
+      "name": "InterSteller",
+      "url": "https://nulltx.com/wp-content/uploads/2018/09/what-is-interstellar.jpg",
+      "qualities": "From World war 2",
+      "id": 71
+    },
+    {
+      "name": "DDLJ",
+      "url": "https://smedia2.intoday.in/aajtak/images/stories/122014/ddlj_sm_fb_650_102016025915.jpg",
+      "qualities": "SRK, KAJOL, AMRISH PURI",
+      "id": 72
+    }
+  ]
+}

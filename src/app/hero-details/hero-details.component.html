@@ -1,0 +1,32 @@
+<form>
+  <img src="{{imageUrl}}" width="150px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field class="w-100">
+          <input matInput [(ngModel)]="heroName" name="heroName1" [class.error]="isValidHero" (change)="isValidHero = false;"
+            placeholder="Movie Name">
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field class="w-100">
+          <input matInput [(ngModel)]="tags" name="tags1" [class.error]="isValidTag" placeholder="Stars" (change)="isValidTag = false;">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field class="w-100">
+          <input matInput [(ngModel)]="imageUrl" name="imageUrl1" [class.error]="isValidPath" (change)="isValidPath = false;"
+            placeholder="Poster path">
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <div class="text-right m-t-10">
+          <button mat-raised-button color="basic" (click)="createHero(heroName, tags, imageUrl);" class="m-l-10">Submit</button>
+          <button mat-raised-button color="basic" [routerLink]="['/heroes']" class="m-l-10">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

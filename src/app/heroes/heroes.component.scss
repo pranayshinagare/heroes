@@ -1,0 +1,21 @@
+.inline_control {
+  display: inline-block;
+  width: auto;
+}
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+.tagLabel {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #f05b14;
+  color: #fff;
+  margin-left: 5px;
+}
+.fa {
+	&:hover {
+		color: #999;
+	}
+}
