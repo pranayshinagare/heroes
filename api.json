@@ -1,19 +1,47 @@
 {
+  "menus": [
+    {
+      "title": "Home",
+      "link": "home"
+    },
+    {
+      "title": "Browse",
+      "link": "home"
+    },
+    {
+      "title": "Discover",
+      "link": "home"
+    },
+    {
+      "title": "Radio",
+      "link": "home"
+    },
+    {
+      "title": "Contact",
+      "link": "home"
+    }
+  ],
   "villans": [
     {
       "id": 1,
       "name": "shyam"
     }
   ],
+  "login": [
+    {
+      "email": "123",
+      "password": "123"
+    }
+  ],
   "heros": [
     {
-      "name": "Dhumdhadaka",
+      "name": "DhumdhadAka marathi super hit",
       "url": "http://image.ourclipart.com/2093/20930107/dhoom-dhadaka-marathi-movie.jpg",
-      "qualities": "Ashok saraf, Mahesh kothare, Laxmikant ",
+      "qualities": "Ashok saraf, Mahesh kothare, updated, lasmikant berde",
       "id": 56
     },
     {
-      "name": "Avengers-Infinity War",
+      "name": "Avengers-Infinity Waar",
       "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg",
       "qualities": "Robert John Downey Jr, Chris Hemsworth, Scarlett Johansson",
       "id": 70
@@ -25,16 +53,16 @@
       "id": 48
     },
     {
-      "name": "InterSteller",
-      "url": "https://nulltx.com/wp-content/uploads/2018/09/what-is-interstellar.jpg",
-      "qualities": "From World war 2",
-      "id": 71
+      "name": "Naal",
+      "url": "https://timesofindia.indiatimes.com/photo/66163975/size-96199/66163975.jpg",
+      "qualities": "Nagraj Manjule, Little child, mother",
+      "id": 73
     },
     {
-      "name": "DDLJ",
-      "url": "https://smedia2.intoday.in/aajtak/images/stories/122014/ddlj_sm_fb_650_102016025915.jpg",
-      "qualities": "SRK, KAJOL, AMRISH PURI",
-      "id": 72
+      "name": "PKTDK",
+      "url": "http://image.ourclipart.com/2093/20930107/dhoom-dhadaka-marathi-movie.jpg",
+      "qualities": "Salman Khan",
+      "id": 74
     }
   ]
 }

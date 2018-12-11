@@ -19,3 +19,6 @@ ul {
 		color: #999;
 	}
 }
+::ng-deep button.action-btn {
+  display: inline-block;
+}

@@ -3,3 +3,6 @@ p {
     padding: 10px 0;
     text-align: center;
 }
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}

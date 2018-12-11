@@ -1,29 +1,41 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from "rxjs";
+import { HttpClientModule, HttpResponse } from '@angular/common/http';
+
+export interface Config {
+  heroesUrl: string;
+  textfile: string;
+}
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class DataService {
-  constructor() {
-  }
-
-  cars = [
-    'Ford','Chevrolet','Buick'
-  ];
-
   data = null;
 
-  setData (data) {
+  setData(data) {
     this.data = data;
   };
 
-  getData () {
+  getData() {
     return this.data;
   };
 
-  // return {
-  //   setData: setData,
-  //   getData: getData,
-  // };
+  configUrl = 'assets/config.json';
+
+  getConfig() {
+    console.log(this.http.get<Config>(this.configUrl));
+    return this.http.get<Config>(this.configUrl);
+  }
+
+  getConfigResponse(): Observable<HttpResponse<Config>> {
+    return this.http.get<Config>(
+      this.configUrl, { observe: 'response' });
+  }
+
+  constructor(private http: HttpClient) {
+    // this.getConfig();
+  }
 }

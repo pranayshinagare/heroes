@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../pass-data.service';
 import { Router } from "@angular/router";
 import { ToastrService } from 'ngx-toastr';
-import { Hero } from '../hero';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
@@ -31,8 +30,12 @@ export class HeroDetailsComponent implements OnInit {
 
     return isValid;
   }
-
-  createHero(heroName, tags, imageUrl, hero: Hero): void {
+  masterId: boolean;
+  heroName;
+  tags;
+  imageUrl;
+  selectedHero;
+  createHero(heroName, tags, imageUrl): void {
     if (!this.errorHandle()) {
       this.toastr.error('Please enter valid data');
     } else {
@@ -80,14 +83,14 @@ export class HeroDetailsComponent implements OnInit {
       }
     }
   }
+  
   constructor(private toastr: ToastrService, private dataService: DataService, private router: Router, private spinner: NgxSpinnerService) {
     this.masterId = null;
     this.selectedHero = null;
     this.heroName = null;
     this.tags = null;
     this.imageUrl = null;
-    if (!this.dataService.data) {
-    } else {
+    if (!!this.dataService.data) {
       this.masterId = this.dataService.data.id;
       this.selectedHero = this.dataService.data;
       this.heroName = this.dataService.data.name;
@@ -98,5 +101,4 @@ export class HeroDetailsComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
