@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatInputModule} from '@angular/material/input';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   imports: [
@@ -43,7 +44,8 @@ import {MatInputModule} from '@angular/material/input';
     HeroDetailsComponent,
     HighlightDirective,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    ButtonComponent
   ],
 })
 

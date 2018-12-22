@@ -1,15 +1,22 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../pass-data.service';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'hero-details',
+  selector: 'app-hero-details',
   templateUrl: './hero-details.component.html',
   styleUrls: ['./hero-details.component.scss']
 })
 export class HeroDetailsComponent implements OnInit {
+
+  masterId: boolean;
+  heroName: any;
+  tags: any;
+  imageUrl: any;
+  selectedHero: any;
+
   errorHandle = function () {
     let isValid = true;
 
@@ -29,12 +36,8 @@ export class HeroDetailsComponent implements OnInit {
     }
 
     return isValid;
-  }
-  masterId: boolean;
-  heroName;
-  tags;
-  imageUrl;
-  selectedHero;
+  };
+
   createHero(heroName, tags, imageUrl): void {
     if (!this.errorHandle()) {
       this.toastr.error('Please enter valid data');
@@ -44,7 +47,7 @@ export class HeroDetailsComponent implements OnInit {
         fetch(`http://localhost:3000/heros`, {
           method: 'post',
           headers: {
-            "Content-Type": "application/json; charset=utf-8",
+            'Content-Type': 'application/json; charset=utf-8',
           },
           body: JSON.stringify({ name: heroName, url: imageUrl, qualities: tags })
         })
@@ -64,7 +67,7 @@ export class HeroDetailsComponent implements OnInit {
         fetch(`http://localhost:3000/heros/${this.masterId}`, {
           method: 'PATCH',
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify({ name: heroName, qualities: tags, url: imageUrl })
         })
@@ -83,13 +86,16 @@ export class HeroDetailsComponent implements OnInit {
       }
     }
   }
-  
+
   constructor(private toastr: ToastrService, private dataService: DataService, private router: Router, private spinner: NgxSpinnerService) {
     this.masterId = null;
     this.selectedHero = null;
     this.heroName = null;
     this.tags = null;
     this.imageUrl = null;
+  }
+
+  ngOnInit() {
     if (!!this.dataService.data) {
       this.masterId = this.dataService.data.id;
       this.selectedHero = this.dataService.data;
@@ -97,8 +103,5 @@ export class HeroDetailsComponent implements OnInit {
       this.tags = this.dataService.data.qualities;
       this.imageUrl = this.dataService.data.url;
     }
-  }
-
-  ngOnInit() {
   }
 }

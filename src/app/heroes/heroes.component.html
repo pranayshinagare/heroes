@@ -26,6 +26,7 @@
             <i class="material-icons p-l-5 cur-pointer" [routerLink]="['/details']" (click)="onSelect(hero);" title="Edit">edit</i>
             <i class="material-icons p-l-5 cur-pointer" (click)="deleteHero(hero);" title="Delete">delete</i>
           </td>
+          <app-button (click)="deleteHero(hero)"></app-button>
         </tr>
       </tbody>
     </table>

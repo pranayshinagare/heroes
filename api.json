@@ -35,12 +35,6 @@
   ],
   "heros": [
     {
-      "name": "DhumdhadAka marathi super hit",
-      "url": "http://image.ourclipart.com/2093/20930107/dhoom-dhadaka-marathi-movie.jpg",
-      "qualities": "Ashok saraf, Mahesh kothare, updated, lasmikant berde",
-      "id": 56
-    },
-    {
       "name": "Avengers-Infinity Waar",
       "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg",
       "qualities": "Robert John Downey Jr, Chris Hemsworth, Scarlett Johansson",
@@ -59,9 +53,9 @@
       "id": 73
     },
     {
-      "name": "PKTDK",
-      "url": "http://image.ourclipart.com/2093/20930107/dhoom-dhadaka-marathi-movie.jpg",
-      "qualities": "Salman Khan",
+      "name": "test",
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg",
+      "qualities": "bob, alies",
       "id": 74
     }
   ]
