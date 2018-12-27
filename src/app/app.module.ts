@@ -13,11 +13,10 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './/app-routing.module';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HighlightDirective } from './highlight.directive';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
@@ -42,7 +41,6 @@ import { ButtonComponent } from './components/button/button.component';
     AppComponent,
     HeroesComponent,
     HeroDetailsComponent,
-    HighlightDirective,
     LoginComponent,
     UserComponent,
     ButtonComponent
