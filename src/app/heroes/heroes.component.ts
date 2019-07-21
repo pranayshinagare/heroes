@@ -26,7 +26,7 @@ export class HeroesComponent implements OnInit {
       });
   };
 
-  deleteHero(hero): void {
+  deleteHero(hero: any): void {
     fetch(`http://localhost:3000/heros/${hero.id}`, {
       method: 'delete',
     })
@@ -44,7 +44,7 @@ export class HeroesComponent implements OnInit {
     this.dataService.setData(null);
   }
 
-  onSelect(hero): void {
+  onSelect(hero: any): void {
     this.dataService.setData(hero);
   }
 }

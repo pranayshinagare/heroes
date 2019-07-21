@@ -8,7 +8,6 @@ import { UiModule } from './ui/ui.module';
 import { HeroesComponent } from './heroes/heroes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSpinnerModule } from 'ngx-spinner';
-
 import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './/app-routing.module';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
@@ -18,7 +17,15 @@ import { UserComponent } from './user/user.component';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { ButtonComponent } from './components/button/button.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 'auto'
+};
 @NgModule({
   imports: [
     CommonModule,
@@ -32,10 +39,16 @@ import { ButtonComponent } from './components/button/button.component';
     AppRoutingModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatInputModule
+    MatInputModule,
+    SwiperModule
   ],
   exports: [MatButtonModule, MatCheckboxModule],
-  providers: [],
+  providers: [
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG
+    }
+  ],
   bootstrap: [AppComponent],
   declarations: [
     AppComponent,
@@ -43,7 +56,8 @@ import { ButtonComponent } from './components/button/button.component';
     HeroDetailsComponent,
     LoginComponent,
     UserComponent,
-    ButtonComponent
+    ButtonComponent,
+    CarouselComponent
   ],
 })
 

@@ -5,7 +5,8 @@
         <h4>List of Movies</h4>
       </div>
       <div class="col-md-4">
-        <button mat-raised-button color="primary" [routerLink]="['/details']" (click)="navigateToCreate();" class="m-l-10 pull-right">Create</button>
+        <button mat-raised-button color="primary" [routerLink]="['/details']" (click)="navigateToCreate();"
+          class="m-l-10 pull-right">Create</button>
       </div>
     </div>
   </div>
@@ -23,10 +24,10 @@
           <td>{{hero.name}}</td>
           <td>{{hero.qualities}}</td>
           <td>
-            <i class="material-icons p-l-5 cur-pointer" [routerLink]="['/details']" (click)="onSelect(hero);" title="Edit">edit</i>
+            <i class="material-icons p-l-5 cur-pointer" [routerLink]="['/details']" (click)="onSelect(hero);"
+              title="Edit">edit</i>
             <i class="material-icons p-l-5 cur-pointer" (click)="deleteHero(hero);" title="Delete">delete</i>
           </td>
-          <app-button (click)="deleteHero(hero)"></app-button>
         </tr>
       </tbody>
     </table>

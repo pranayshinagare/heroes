@@ -2,23 +2,23 @@
   "menus": [
     {
       "title": "Home",
-      "link": "home"
+      "link": "user"
     },
     {
       "title": "Browse",
-      "link": "home"
+      "link": "login"
     },
     {
       "title": "Discover",
-      "link": "home"
+      "link": "heroes"
     },
     {
       "title": "Radio",
-      "link": "home"
+      "link": "details"
     },
     {
       "title": "Contact",
-      "link": "home"
+      "link": "login"
     }
   ],
   "villans": [
@@ -35,28 +35,34 @@
   ],
   "heros": [
     {
-      "name": "Avengers-Infinity Waar",
+      "name": "Avengers-Infinity War",
       "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg",
       "qualities": "Robert John Downey Jr, Chris Hemsworth, Scarlett Johansson",
       "id": 70
     },
     {
-      "name": "Jurasic park",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2JMTOrl4JDWjl7s3-_ym8i5vhul7k-8E1e1tXA8mfU3aACl6",
-      "qualities": "Irfan khan, sai tamankar",
-      "id": 48
-    },
-    {
-      "name": "Naal",
+      "name": "Dhamaal",
       "url": "https://timesofindia.indiatimes.com/photo/66163975/size-96199/66163975.jpg",
-      "qualities": "Nagraj Manjule, Little child, mother",
+      "qualities": "Dutta, kumar, robert",
       "id": 73
     },
     {
-      "name": "test",
-      "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg",
-      "qualities": "bob, alies",
-      "id": 74
+      "name": "vdf",
+      "url": "vdfdf",
+      "qualities": "dfvfdf",
+      "id": 75
+    },
+    {
+      "name": "Avengers 80",
+      "url": "https://dummyimage.com/600x400/000/fff",
+      "qualities": "Srark, scachin, anil",
+      "id": 76
+    },
+    {
+      "name": "sds",
+      "url": "sdcsdcd",
+      "qualities": "dsdsdsdcs",
+      "id": 77
     }
   ]
 }
