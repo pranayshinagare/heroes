@@ -21,6 +21,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -40,7 +41,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
-    SwiperModule
+    SwiperModule,
+    PdfViewerModule
   ],
   exports: [MatButtonModule, MatCheckboxModule],
   providers: [

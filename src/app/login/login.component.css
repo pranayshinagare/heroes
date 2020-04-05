@@ -77,3 +77,6 @@
 ::ng-deep button.action-btn {
   display: none;
 }
+li.chapter_item {
+  cursor: pointer;
+}

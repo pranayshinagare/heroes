@@ -1,7 +1,7 @@
 {
   "menus": [
     {
-      "title": "Home",
+      "title": "User",
       "link": "user"
     },
     {
@@ -15,10 +15,6 @@
     {
       "title": "Radio",
       "link": "details"
-    },
-    {
-      "title": "Contact",
-      "link": "login"
     }
   ],
   "villans": [
@@ -47,12 +43,6 @@
       "id": 73
     },
     {
-      "name": "vdf",
-      "url": "vdfdf",
-      "qualities": "dfvfdf",
-      "id": 75
-    },
-    {
       "name": "Avengers 80",
       "url": "https://dummyimage.com/600x400/000/fff",
       "qualities": "Srark, scachin, anil",
@@ -63,6 +53,12 @@
       "url": "sdcsdcd",
       "qualities": "dsdsdsdcs",
       "id": 77
+    },
+    {
+      "name": "res",
+      "url": "bac.png",
+      "qualities": "res, mes",
+      "id": 78
     }
   ]
 }

@@ -1,3 +1,15 @@
-<p>
-  user works!
-</p>
+<div *ngIf="dataFromChapter && dataFromChapter.pages.length">
+  <div id="flipbook">
+    <div class="hard">|| Geeta ||</div>
+    <div class="hard"></div>
+    <div *ngFor="let data of dataFromChapter.pages">
+      <div>
+        <pdf-viewer [src]="data.pathName" [render-text]="true" [original-size]="false" (on-progress)="onProgress($event)" [fit-to-page]="true" [autoresize]="true" (after-load-complete)="callBackFn($event)">
+        </pdf-viewer>
+      </div>
+    </div>
+    <!-- <pdf-viewer [src]="fileSrc" [render-text]="true" [original-size]="false"></pdf-viewer> -->
+    <div class="hard"></div>
+    <div class="hard"></div>
+  </div>
+</div>
